@@ -147,3 +147,21 @@ footer a#signup {
   font-size: 24px;
   cursor: pointer;
 }
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
