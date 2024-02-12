@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="main">
+    <div class="welcome">Welcome to Budget App:
+    <% if user_signed_in? %>
+        <%= current_user.name %> 👋😊
+    <% end %>
+    </div>
+  <footer>
+  <%= link_to 'LOGIN', new_user_session_path, id: 'login' %>
+  <%= link_to 'SIGN UP', new_user_registration_path, id: 'signup' %>
+  </footer>
+</div>
