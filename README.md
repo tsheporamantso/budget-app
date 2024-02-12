@@ -188,6 +188,7 @@ If you like this project please give a star on [github](https://github.com/tshep
 
 I would like to thank:
 
+- [ ] **Gregoire Vella on Behance for the design pattern**
 - [ ] **Microverse and all the staff**
 - [ ] **Microverse Communinity**
 - [ ] **Thanks to my coding Partners**
