@@ -4,6 +4,12 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 ruby '3.2.2'
 
+# Use CanCanCan to authorize users
+gem 'cancancan'
+
+# Use Devise to authenticate users
+gem 'devise'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.3'
 
