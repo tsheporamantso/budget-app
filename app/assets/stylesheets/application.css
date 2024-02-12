@@ -1,15 +1,98 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #434b54;
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  color: #ffff;
+  background-color: #3778c2;
+  padding: 10px 20px;
+}
+
+.back-icon::before {
+  content: "\2190";
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.btn {
+  color: #ffff;
+  background-color: #3778c2;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.email-input,
+.password-input,
+.name-input,
+.pass-input,
+.newp-input {
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  outline: none;
+}
+
+.links {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  color: #434b54;
+}
+
+.links a:first-child {
+  border: 1px solid #3778c2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.links a:last-of-type {
+  border: 1px solid #3778c2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.remember-me {
+  margin: 10px 20px;
+}
+
+.login-button {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  background-color: #5fb523;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+}
