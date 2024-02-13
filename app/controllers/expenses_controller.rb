@@ -15,11 +15,11 @@ class ExpensesController < ApplicationController
   def create
     @user = User.find(params[:user_id])
     @category = Category.find(params[:expense][:category_id])
-    @expense = @category.expense.build(expense_params)
+    @expense = @category.expenses.build(expense_params)
     @expense.author = @user
 
     if @expense.save
-      redirect_to user_category_expense_path(@user, @category)
+      redirect_to user_category_expenses_path(@user, @category)
       flash[:notice] = 'Expense created successfully'
     else
       @categories = Category.all
