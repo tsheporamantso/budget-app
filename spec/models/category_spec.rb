@@ -7,7 +7,7 @@ RSpec.describe Category, type: :model do
     category = Category.new(
       name: 'Nandos',
       icon: 'chicken.jpg',
-      user: 
+      user:
     )
     expect(category).to be_valid
   end
@@ -15,7 +15,7 @@ RSpec.describe Category, type: :model do
   it 'should not be valid without the name' do
     category = Category.new(
       icon: 'chicken.jpg',
-      user: 
+      user:
     )
     expect(category).to_not be_valid
   end
@@ -23,7 +23,7 @@ RSpec.describe Category, type: :model do
   it 'should not be valid without the name' do
     category = Category.new(
       name: 'Nandos',
-      user: 
+      user:
     )
     expect(category).to_not be_valid
   end

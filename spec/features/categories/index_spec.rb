@@ -39,5 +39,3 @@ RSpec.describe 'Testing Category#index view', type: :feature do
     expect(page).to have_current_path(new_user_category_path(@user))
   end
 end
-
-
