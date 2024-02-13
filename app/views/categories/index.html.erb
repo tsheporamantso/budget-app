@@ -7,7 +7,9 @@
 <div class="category-list">
   <% @categories.each do |category| %>
     <div class="category">
-      <img scr='<%= category.icon %>' alt='<%= category.name %>'>
+      <div class="category-icon">
+        <img scr='<%= category.icon %>' alt='<%= category.name %>'>
+      </div>
       <div>
         <p class='name'><%= category.name %></p>
         <p class='expense-date'><%= category.created_at.strftime("%d %b %Y") %></p>
@@ -16,5 +18,8 @@
         <p>PLACEHOLDER FOR AMOUNT!!</p>
       </div>
     </div>  
+  <% end %>
+  <%= link_to new_user_category_path(@user), class: 'add-category' do %>
+    <span>Add Category</span>
   <% end %>
 </div>
