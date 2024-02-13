@@ -9,7 +9,7 @@
     <div class='expense-item'>
       <div>
         <p><%= expense.name %></p>
-        <p class='expense-date'><%= category.created_at.strftime("%d %b %Y") %></p>
+        <p class='expense-date'><%= expense.created_at.strftime("%d %b %Y") %></p>
       </div>
       <p class='amount'>$<%= expense.amount %></p>
       <p><%= expense.category.name %></p>
