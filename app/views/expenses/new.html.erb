@@ -1,0 +1,25 @@
+<header>
+  <%= link_to user_category_expenses_path(@user, @category), class: 'back-icon' do %></span><% end %>
+    <h2>NEW TRANSACTION</h2>
+    <i class="fa-solid fa-magnifying-glass"></i>
+</header>
+
+<div class="category-list">
+  <div class="form">
+    <%= form_with(model: [@user, @category, @expense], local: true, method: :post) do |form| %>
+      <div>
+        <%= form.label :name %><br>
+        <%= form.text_field :name, autocomplete: 'off' %>
+      </div> 
+
+      <div>
+        <%= form.label :amount %><br>
+        <%= form.text_field :amount %>
+      </div>
+
+      <%= form.label :category_id %>
+      <%= form.collection_select :category_id, @categories, :id, :name %>
+      <%= form.submit 'Save', class: 'button' %>
+    <% end %>
+  </div>
+</div>
