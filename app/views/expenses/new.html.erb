@@ -4,6 +4,13 @@
     <i class="fa-solid fa-magnifying-glass"></i>
 </header>
 
+<% if @expense.errors.any? %>
+<h2>The following errors prevented category from being created</h2>
+  <% @expense.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>  
+<% end %>
+
 <div class="category-list">
   <div class="form">
     <%= form_with(model: [@user, @category, @expense], local: true, method: :post) do |form| %>
