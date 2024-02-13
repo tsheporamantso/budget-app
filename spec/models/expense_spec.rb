@@ -32,6 +32,16 @@ RSpec.describe Expense, type: :model do
     expect(expense).to_not be_valid
   end
 
+  it 'should not be valid without the negative amount' do
+    expense = Expense.new(
+      name: 'Nandos',
+      amount: -20,
+      author_id: user.id,
+      category:
+    )
+    expect(expense).to_not be_valid
+  end
+
   it 'should not be valid without the author_id' do
     expense = Expense.new(
       name: 'Nandos',
