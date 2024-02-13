@@ -16,7 +16,7 @@
         <p class='expense-date'><%= category.created_at.strftime("%d %b %Y") %></p>
       </div>
       <div class="amount">
-        <p>PLACEHOLDER FOR AMOUNT!!</p>
+        <p><%= number_to_currency(category.expenses.sum(:amount)) %></p>
       </div>
     </div>  
     <% end %>
