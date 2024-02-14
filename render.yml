@@ -2,10 +2,13 @@ databases:
   - name: budget-app
     databaseName: budget_app_pgnf
     user: budget_app_pgnf_user
+    plan: free
+
 services:
   - type: web
     name: BudgetApp
     runtime: ruby
+    plan: free
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
