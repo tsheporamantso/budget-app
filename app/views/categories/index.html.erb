@@ -1,7 +1,14 @@
 <header>
   <p class="menu-icon">&#9776;</p>
   <h1>CATEGORIES</h1>
-  <i class="fa-solid fa-magnifying-glass"></i>
+  <% unless current_page?(new_user_registration_path) || current_page?(new_user_session_path) %>
+  <% if user_signed_in? %>
+  <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: "logout" %>
+  <% else %>
+    <%= link_to 'Sign up', new_user_registration_path %>
+    <%= link_to 'Login', new_user_session_path %>
+  <% end %>
+<% end %>
 </header>
 
 <div class="category-list">
