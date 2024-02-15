@@ -1,0 +1,32 @@
+<header>
+  <%= link_to user_categories_path(@user), class: 'back-icon' do %></span><% end %>
+  <h2> ADD CATEGORY</h2>
+</header>
+
+<% if @category.errors.any? %>
+<h2>The following errors prevented category from being created</h2>
+  <% @category.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>  
+<% end %>
+
+<div class="category-list">
+  <div class="form">
+    <%= form_with(model: [@user, @category], local: true, method: :post) do |form| %>
+
+      <div>
+        <%= form.label :name %><br>
+        <%= form.text_field :name, autocomplete: 'off' %>
+      </div>
+
+      <div>
+        <%= form.label :icon %><br>
+        <%= form.text_field :icon %>
+      </div>
+
+      <div>
+        <%= form.submit 'Save', class: 'button' %>
+      </div>
+    <% end %>
+  </div>
+</div>
