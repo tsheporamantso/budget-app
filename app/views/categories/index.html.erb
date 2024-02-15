@@ -15,9 +15,6 @@
         <p class='name'><%= category.name %></p>
         <p class='expense-date'><%= category.created_at.strftime("%d %b %Y") %></p>
       </div>
-      <div class="amount">
-        <p><%= number_to_currency(category.expenses.sum(:amount)) %></p>
-      </div>
     </div>  
     <% end %>
   <% end %>
