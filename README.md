@@ -71,8 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Live demo [link](https://budget-app-xdmc.onrender.com)
-- Presentation [link](https://drive.google.com/file/d/1Pe7wPLhLAgDZx4ih-z1e_vvkMEdk9YtR/view?usp=sharing)
+- Not live yet
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
