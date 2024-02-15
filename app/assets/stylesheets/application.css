@@ -177,6 +177,7 @@ input[type="submit"] {
 
 .button {
   background-color: #5fb523;
+  width: 100%;
 }
 
 .add-category input[type="submit"],
@@ -207,9 +208,9 @@ span {
   padding: 15px;
 }
 
-.category-link:hover {
+/* .category-link:hover {
   background-color: #f4f4f4;
-}
+} */
 
 .category {
   display: flex;
@@ -227,7 +228,7 @@ img {
 }
 
 .form {
-  width: 350px;
+  width: 100%;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
