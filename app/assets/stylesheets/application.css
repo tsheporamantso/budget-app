@@ -228,7 +228,7 @@ img {
 }
 
 .form {
-  width: 100%;
+  width: 350px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -239,6 +239,7 @@ img {
 
 input[type="text"] {
   padding: 18px;
+  width: 100%;
   border: none;
   outline: none;
   margin-bottom: 10px;
